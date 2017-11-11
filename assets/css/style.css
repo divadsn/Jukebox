@@ -145,11 +145,7 @@ body {
   }
 }
 
-.current-song {
-  padding-left: 10px;
-}
-
-.volume-slider {
+.current-song, .volume-slider {
   padding: 0 10px;
 }
 
