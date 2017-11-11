@@ -1,78 +1,76 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700,700italic,600,400italic,600italic");
 
 html {
-	background: url("../../background.jpg") center top no-repeat;
-	background-size: cover;
-	position: relative;
-	min-height: 100%;
+  background: url("../../background.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	color: #333333;
-	background-color: rgba(0, 0, 0, 0.0);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .background {
-	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .clearfix:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .clearfix {
-	display: inline-block;
+  display: inline-block;
 }
 
 * html .clearfix {
-	height: 1%;
+  height: 1%;
 }
 
 .clearfix {
-	display: block;
+  display: block;
 }
 
 .navbar-fixed-top {
-  height: 50px;
-	border-bottom: 1px solid #e5e5e5;
-	-moz-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
+  min-height: 50px;
+  border-bottom: 1px solid #e5e5e5;
+  -moz-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 .navbar-fixed-bottom {
-  height: 70px;
-	border-top: 1px solid #e5e5e5;
-	-moz-box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
+  min-height: 70px;
+  border-top: 1px solid #e5e5e5;
+  -moz-box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -3px 2px -2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 .navbar-volume {
-	height: 50px;
+  height: 50px;
 }
 
 .navbar-volume #volumeSlider {
-	width: 150px
+  width: 150px
 }
 
 .section {
   width: 100%;
-  padding: 0 7%;
   display: table;
-  margin: 0;
   max-width: none;
   height: 100vh;
 }
@@ -83,27 +81,27 @@ body {
 }
 
 .playing-now {
-	margin-left: 280px;
-	position: relative;
+  margin-left: 280px;
+  position: relative;
 }
 
 .cover {
-	background: url("../../artwork.jpg");
-	background-size: 250px 250px;
-	background-repeat: no-repeat;
-	height: 250px;
+  background: url("../../artwork.jpg");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  height: 250px;
 }
 
 .title, .artist {
-	margin: 0px;
-	line-height: normal;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+  margin: 0px;
+  line-height: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn-links {
-	position: absolute;
-	bottom: 0;
-	margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
 }
