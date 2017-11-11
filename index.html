@@ -15,11 +15,11 @@
   </head>
   <body>
     <div class="background"></div>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
             <li><a href="#"><i class="fa fa-info fa-fw"></i> About this project</a></li>
             <li><a href="#"><i class="fa fa-calendar fa-fw"></i> Event schedule</a></li>
@@ -86,35 +86,27 @@
     </div>
 
     <!-- Media controls -->
-    <nav class="navbar navbar-default navbar-fixed-bottom media-controls" style="height: 70px">
+    <footer class="footer">
       <div class="container">
-        <div class="navbar-inner">
-          <ul class="nav navbar-nav navbar-left" style="padding: 10px 0;">
-            <li>
-              <div style="display: flex">
-                <span class="img-thumbnail" style="height: 50px">
-                  <img id="cover" class="img-responsive" src="http://coverart.codebucket.de/api/v1/track/Openwater &amp; Matt Vice/No Regrets.jpg" width="40" height="40" alt="" style="float: left">
-                </span>
-                <div style="padding-left: 10px">
-                  <b style="vertical-align: middle">No Regrets</b><br />
-                  <span>by Openwater &amp; Matt Vice</span>
-                </div>
-              </div>
-            </li>
-            <li class="navbar-divider visible-xs" role="separator"></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right navbar-inline" style="padding: 10px 0;">
-            <li><a id="play" href="#"><i class="fa fa-play fa-fw"></i></a></li>
-            <li class="navbar-volume">
-              <p class="navbar-text">
-                <input id="volume" data-slider-id="volumeSlider" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="2" data-slider-value="100" data-slider-tooltip="hide" class="volume-md" />
-              </p>
-            </li>
-            <li><a id="mute" href="#"><i class="fa fa-volume-up fa-fw"></i></a></li>
-          </ul>
+        <div class="navbar-footer">
+          <div>
+            <div class="img-thumbnail">
+              <img id="cover" class="img-responsive" src="http://coverart.codebucket.de/api/v1/track/Openwater &amp; Matt Vice/No Regrets.jpg" width="50" height="50" alt="">
+            </div>
+            <div class="current-song">
+              <b>No Regrets</b><br />
+              <span>by Openwater &amp; Matt Vice</span>
+            </div>
+          </div>
+          <div>
+            <a class="btn btn-default"><i class="fa fa-play fa-fw"></i></a>
+            <div class="volume-slider">
+              <input id="volume" data-slider-id="volumeSlider" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="2" data-slider-value="100" data-slider-tooltip="hide" class="volume-md" />
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Bootstrap JS -->
