@@ -5,6 +5,7 @@ html {
   background-size: cover;
   position: relative;
   min-height: 100%;
+  padding-bottom: 70px;
 }
 
 body {
@@ -50,16 +51,18 @@ body {
   box-sizing: border-box;
 }
 
-.section {
-  width: 100%;
-  display: table;
-  max-width: none;
-  height: calc(100vh - 122px);
-}
+@media (min-width: 768px) {
+  .section {
+    width: 100%;
+    display: table;
+    max-width: none;
+    height: calc(100vh - 150px);
+  }
 
-.content {
-  display: table-cell;
-  vertical-align: middle;
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .playing-now {
@@ -92,7 +95,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 70px;
+  min-height: 50px;
   padding: 10px 0;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
@@ -103,6 +106,7 @@ body {
 }
 
 .navbar-footer {
+  display: table;
   height: 100%;
   width: 100%;
 }
@@ -113,16 +117,77 @@ body {
   clear: both;
 }
 
-.navbar-footer div {
+.navbar-footer .footer-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-content div {
   display: inline-block;
   vertical-align: middle;
+}
+
+.media-controls {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .media-controls {
+    text-align: right;
+  }
 }
 
 .current-song {
   padding-left: 10px;
 }
 
+.volume-slider {
+  padding: 0 10px;
+}
 
 .volume-slider #volumeSlider {
-  width: 150px
+  width: 150px;
+}
+
+@media (max-width: 767px) {
+  .volume-slider {
+    width: calc(100% - 64px);
+  }
+
+  .volume-slider #volumeSlider {
+    width: 100%;
+  }
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.media-controls .btn-circle {
+  text-align: right !important;
+  margin-right: 10px;
 }
