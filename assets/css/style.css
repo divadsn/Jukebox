@@ -5,7 +5,7 @@ html {
   background-size: cover;
   position: relative;
   min-height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 body {
@@ -52,16 +52,24 @@ body {
 }
 
 @media (min-width: 768px) {
+  .navbar-static-top {
+    margin-bottom: 0;
+  }
+
   .section {
     width: 100%;
     display: table;
     max-width: none;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 131px);
   }
 
   .content {
     display: table-cell;
     vertical-align: middle;
+  }
+
+  .content .panel:last-child {
+    margin-bottom: 0;
   }
 }
 
