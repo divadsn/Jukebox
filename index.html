@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="background"></div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand"><i class="fa fa-headphones fa-fw"></i> <strong>Jukebox</strong> FM</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><i class="fa fa-info fa-fw"></i> About this project</a></li>
+            <li><a href="#"><i class="fa fa-calendar fa-fw"></i> Event schedule</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i> Send a message</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-lastfm fa-fw"></i> Connect to Last.fm</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="section">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="panel panel-default">
+      					<div class="panel-heading">
+      						<h4 class="panel-title"><i class="fa fa-music fa-fw"></i> Playing Now</h4>
+      					</div>
+      					<div class="panel-body">
+      						<div class="pull-left img-thumbnail">
+      							<img id="cover" class="img-responsive cover" src="http://coverart.codebucket.de/api/v1/track/Openwater%20&%20Matt%20Vice/No%20Regrets.jpg" width="250" height="250" alt="">
+      						</div>
+      						<div class="playing-now clearfix">
+      							<h2 class="title"><b id="title">No Regrets</b></h2>
+      							<h4 class="artist">by <span id="artist">Openwater &amp; Matt Vice</span></h4>
+      							<div class="btn-links">
+      								<a id="like" href="#" class="btn btn-default btn-like" data-soundcloud-track-id="" role="button">
+      									<i class="fa fa-heart fa-fw"></i><span class="btn-label"> Like</span>
+      								</a>
+      								<a id="repost" href="#" class="btn btn-default btn-repost" data-soundcloud-track-id="" role="button">
+      									<i class="fa fa-retweet fa-fw"></i><span class="btn-label"> Repost</span>
+      								</a>
+      								<a id="share" href="http://soundcloud.com/" class="btn btn-default btn-share" target="_blank" role="button">
+      									<i class="fa fa-share fa-fw"></i><span class="btn-label"> Share</span>
+      								</a>
+      								<a id="purchase" href="https://itunes.apple.com/us/" class="btn btn-default btn-itunes" target="_blank" role="button">
+      									<i class="fa fa-apple fa-fw"></i><span class="btn-label"> Support on iTunes</span>
+      								</a>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="panel-footer">
+      						<i class="fa fa-info-circle fa-fw"></i> Message: <span id="message">This is a prototype of the new design</span>
+      					</div>
+      				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media controls -->
+    <nav class="navbar navbar-default navbar-fixed-bottom media-controls" style="height: 70px">
+      <div class="container">
+        <div class="navbar-inner">
+					<ul class="nav navbar-nav navbar-left" style="padding: 10px 0;">
+						<li>
+              <div style="display: flex">
+                <span class="img-thumbnail" style="height: 50px">
+                  <img id="cover" class="img-responsive" src="http://coverart.codebucket.de/api/v1/track/Openwater &amp; Matt Vice/No Regrets.jpg" width="40" height="40" alt="" style="float: left">
+                </span>
+                <div style="padding-left: 10px">
+                  <b style="vertical-align: middle">No Regrets</b><br />
+                  <span>by Openwater &amp; Matt Vice</span>
+                </div>
+              </div>
+						</li>
+						<li class="navbar-divider visible-xs" role="separator"></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right navbar-inline" style="padding: 10px 0;">
+						<li><a id="play" href="#"><i class="fa fa-play fa-fw"></i></a></li>
+						<li class="navbar-volume">
+							<p class="navbar-text">
+								<input id="volume" data-slider-id="volumeSlider" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="2" data-slider-value="100" data-slider-tooltip="hide" class="volume-md" />
+							</p>
+						</li>
+						<li><a id="mute" href="#"><i class="fa fa-volume-up fa-fw"></i></a></li>
+					</ul>
+				</div>
+      </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-slider.min.js"></script>
+    <script>
+      $('#volume').slider({
+        value: "100",
+        formatter: function(value) {
+          return value + '%';
+        }
+      });
+    </script>
+  </body>
+</html>
