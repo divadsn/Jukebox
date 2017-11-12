@@ -67,10 +67,6 @@ body {
     display: table-cell;
     vertical-align: middle;
   }
-
-  .content .panel:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .playing-now {
