@@ -15,6 +15,5 @@ composer.lock
 /assets/js/jquery.js
 /assets/js/jquery.shoutcast.js
 
-
 # Ignore npm.js
 npm.js
