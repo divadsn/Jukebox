@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- So meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Jukebox FM - 24/7 Electronic Dance Music</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Custom styles for this site -->
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <!-- Dimmed background -->
+    <!-- Dimmed background overlay -->
     <div class="background"></div>
 
     <!-- Navigation bar -->
@@ -56,9 +59,7 @@
                   <h4 class="panel-title"><i class="fa fa-music fa-fw"></i> Playing Now</h4>
                 </div>
                 <div class="panel-body">
-                  <div class="pull-left img-thumbnail">
-                    <img id="cover" class="img-responsive cover" src="http://coverart.codebucket.de/api/v1/track/Openwater%20&%20Matt%20Vice/No%20Regrets.jpg" width="250" height="250" alt="">
-                  </div>
+                  Title of song: <span id="songtitle"></span>
                 </div>
                 <div class="panel-footer">
                   <i class="fa fa-info-circle fa-fw"></i> Message: <span id="message">This is a prototype of the new design</span>
@@ -81,7 +82,7 @@
             </div>
             <div class="current-song">
               <b id="title">No Regrets</b><br />
-              <span id="artist">by Openwater &amp; Matt Vice</span>
+              by <span id="artist">Openwater &amp; Matt Vice</span>
             </div>
           </div>
 
@@ -97,17 +98,11 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Bootstrap JS -->
+    <!-- jQuery first, then Bootstrap JS, then our app -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.shoutcast.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-slider.min.js"></script>
-    <script>
-      $('#volume').slider({
-        value: "100",
-        formatter: function(value) {
-          return value + '%';
-        }
-      });
-    </script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
