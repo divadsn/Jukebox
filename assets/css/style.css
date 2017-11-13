@@ -55,13 +55,10 @@ body {
   -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  .navbar-static-top {
-    margin-bottom: 0;
-  }
-
   .section {
     width: 100%;
     display: table;
@@ -73,6 +70,16 @@ body {
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 
 .playing-now {
