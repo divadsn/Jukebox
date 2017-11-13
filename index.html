@@ -116,30 +116,29 @@
     </div>
 
     <!-- Media controls -->
-    <footer class="footer">
+    <nav class="navbar navbar-default navbar-fixed-bottom media-controls">
       <div class="container">
-        <div class="navbar-footer">
-          <!-- Current song, not visible on mobile -->
-          <div class="footer-content hidden-xs">
-            <div class="img-thumbnail">
-              <img id="cover" class="img-responsive" src="http://coverart.codebucket.de/api/v1/track/Openwater &amp; Matt Vice/No Regrets.jpg" width="50" height="50" alt="">
-            </div>
-            <div class="current-song">
-              <b id="title">No Regrets</b><br />
-              by <span id="artist">Openwater &amp; Matt Vice</span>
-            </div>
-          </div>
-
-          <!-- Play/pause and volume slider -->
-          <div class="footer-content media-controls">
-            <button id="play" type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-play"></i></button>
-            <div class="volume-slider">
+        <div class="inline-block">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="navbar-width">
+              <div class="img-thumbnail">
+                <img id="cover" class="img-responsive" src="http://coverart.codebucket.de/api/v1/track/Openwater &amp; Matt Vice/No Regrets.jpg" width="50" height="50" alt="" />
+              </div>
+              <div class="current-song">
+                <b id="title">No Regrets</b><br />
+                by <span id="artist">Openwater &amp; Matt Vice</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button id="play" type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-play"></i></button></li>
+            <li class="navbar-volume">
               <input id="volume" data-slider-id="volumeSlider" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="2" data-slider-value="100" data-slider-tooltip="hide" class="volume-md" />
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </nav>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Bootstrap JS, then our app -->
