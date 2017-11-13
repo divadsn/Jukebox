@@ -129,6 +129,7 @@ body {
 @media (min-width: 768px) {
   .media-controls ul {
     padding: 10px 0;
+    margin: 0 !important;
   }
 
   .media-controls ul:last-child {
