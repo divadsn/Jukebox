@@ -132,10 +132,6 @@ body {
     margin: 0 !important;
   }
 
-  .media-controls ul:last-child {
-    margin-left: auto;
-  }
-
   .inline-block {
     display: flex;
     justify-content: space-between;
