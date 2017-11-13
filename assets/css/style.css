@@ -77,16 +77,6 @@ body {
   }
 }
 
-.panel {
-  position: relative;
-}
-
-.panel-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
 .playing-now {
   margin-left: 280px;
   position: relative;
