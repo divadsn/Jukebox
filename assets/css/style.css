@@ -70,16 +70,21 @@ body {
     display: table-cell;
     vertical-align: middle;
   }
+
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.panel {
+  position: relative;
 }
 
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+.panel-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .playing-now {
