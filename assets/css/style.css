@@ -119,6 +119,7 @@ body {
 }
 
 .inline-block {
+  display: flex;
   height: 100%;
   width: 100%;
 }
@@ -135,7 +136,6 @@ body {
   }
 
   .inline-block {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -160,8 +160,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  .inline-block ul:first-child {
+    width: calc(100% - 20px);
+  }
+
   .current-song {
-    width: calc(100% - 64px);
+    width: calc(100% - 74px);
   }
 
   .navbar-volume {
@@ -204,4 +208,10 @@ body {
 .media-controls .btn-circle {
   text-align: right !important;
   margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .media-controls .btn-circle {
+    margin-right: 0;
+  }
 }
