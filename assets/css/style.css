@@ -100,7 +100,8 @@ body {
 
 .inline-block {
   display: flex;
-  height: 100%;
+  align-items: center;
+  height: 80px;
   width: 100%;
 }
 
