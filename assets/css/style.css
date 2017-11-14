@@ -77,26 +77,6 @@ body {
   }
 }
 
-.playing-now {
-  margin-left: 280px;
-  position: relative;
-}
-
-.cover {
-  background: url("../../artwork.jpg");
-  background-size: 250px 250px;
-  background-repeat: no-repeat;
-  height: 250px;
-}
-
-.title, .artist {
-  margin: 0px;
-  line-height: normal;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .btn-links {
   position: absolute;
   bottom: 0;
