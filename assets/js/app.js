@@ -33,7 +33,23 @@ $(document).ready(function() {
     formatter: function(value) {
       return value + '%';
     }
-  })
+  }).on("slide", function(ev) {
+    $('#player').prop("volume", ev.value / 100);
+  });
+
+  // Play/Pause audio player
+  $('#play').click(function() {
+    var player = $('#player').get(0);
+    if (player.paused) {
+      player.play();
+      $(this).find('i').removeClass("fa-play")
+        .addClass("fa-pause");
+    } else {
+      player.pause();
+      $(this).find('i').removeClass("fa-pause")
+        .addClass("fa-play");
+    }
+  });
 });
 
 this.updateStats = function() {
