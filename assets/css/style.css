@@ -132,6 +132,11 @@ body {
   display: block;
 }
 
+.cover-sm {
+  width: 50px;
+  height: 50px;
+}
+
 .navbar-width {
   width: 100%;
 }
